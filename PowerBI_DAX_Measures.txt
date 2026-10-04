@@ -1,0 +1,16 @@
+IPL PERFORMANCE ANALYTICS – POWER BI DAX MEASURES
+
+Total Matches = COUNTROWS(IPL_Cleaned)
+Total Runs = SUM(IPL_Cleaned[Total_Runs])
+Total Wickets = SUM(IPL_Cleaned[Wickets])
+Total Teams = DISTINCTCOUNT(IPL_Cleaned[Winner])
+Total Players = DISTINCTCOUNT(IPL_Cleaned[Player_of_Match])
+Average Runs per Match = AVERAGE(IPL_Cleaned[Total_Runs])
+
+Matches Won After Toss =
+CALCULATE(COUNTROWS(IPL_Cleaned), IPL_Cleaned[Toss_Won_Match] = 1)
+
+Toss-to-Match Win % =
+DIVIDE([Matches Won After Toss], [Total Matches], 0)
+
+Recommended slicers: Season, Venue, Winner, Toss_Decision.

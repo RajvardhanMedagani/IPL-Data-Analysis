@@ -1,0 +1,8 @@
+1. Open Power BI Desktop.
+2. Get Data -> Text/CSV -> IPL_Cleaned.csv.
+3. Open Transform Data and verify data types.
+4. Rename the query to IPL_Cleaned and load it.
+5. Add the DAX measures from PowerBI_DAX_Measures.txt.
+6. Add KPI cards for matches, runs, wickets, teams, players and average runs.
+7. Add charts for season matches, team wins, top batsmen, top bowlers, runs by season and venue count.
+8. Add Season and Venue slicers.
